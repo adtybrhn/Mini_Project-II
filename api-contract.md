@@ -98,13 +98,15 @@
 * **Success Response:**  
 * **Code:** 200  
   **Content:**  
-  ```{ 
-      product: [
-              {<product_object>},
-              {<product_object>},
-              {<product_object>}
-            ]
-  }``` 
+  ```
+    { 
+        product: [
+                {<product_object>},
+                {<product_object>},
+                {<product_object>}
+              ]
+    }
+  ``` 
 * **Error Response:**
  * **Code:** 401  
   **Content:** `{ "msg": "You must login first!" }`
