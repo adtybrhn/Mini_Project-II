@@ -161,11 +161,11 @@
   *Required:* `id=[integer]`
 * **Data Params**  
 ```
-  {
-  	name: varchar(50),
-    quantity: integer,
-    price: integer
-  }
+    {
+      name: varchar(50),
+      quantity: integer,
+      price: integer
+    }
 ```
 * **Headers**  
   Content-Type: application/json  
