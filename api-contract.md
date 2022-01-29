@@ -101,9 +101,9 @@
   ```
     { 
         product: [
-                {<product_object>},
-                {<product_object>},
-                {<product_object>}
+                  {<product_object>},
+                  {<product_object>},
+                  {<product_object>}
               ]
     }
   ``` 
