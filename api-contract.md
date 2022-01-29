@@ -30,12 +30,12 @@
 * **Success Response:**  
 * **Code:** 200  
   **Content:**  `{ "msg": "Registered!" }` 
-* **Error Response:**
- * **Code:** 404  
+* **Error Response:**  
+  * **Code:** 404  
   **Content:** `{ "msg": "Please enter a password with min. 6 chars" }`  
   OR  
   * **Code:** 401  
-  **Content:** `{  "msg": "Both passwords must match"  }`
+  **Content:** `{ "msg": "Both passwords must match" }`
 
 **POST /minipro/login**
 ----
