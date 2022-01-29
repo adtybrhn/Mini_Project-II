@@ -20,9 +20,7 @@ export const getProductById = async (req, res) => {
         });
 
         if (product === null) {
-            res.json({
-                "message": "Product Not Found"
-            })
+            res.status(404).send({ status: 404, message : "Product Not Found"});
         } else {
             res.json(product);
         }
