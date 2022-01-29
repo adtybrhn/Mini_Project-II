@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "8091a101-f2c1-4f91-8395-1e776ac6e1c2",
+		"name": "POST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "loginMerchant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"aditya\",\r\n    \"password\" : \"merchant1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/minipro/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"minipro",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerMerchant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"admin1\",\r\n    \"password\" : \"admin1\",\r\n    \"password_repeat\" : \"admin1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/minipro/register",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"minipro",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProduct",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY0MzM0NjMwNywiZXhwIjoxNjQzOTUxMTA3fQ.CeY1r9xNm7HoGg_A2MILxvYffejvWqaukk831AZk3JM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"MacBook Pro\",\r\n    \"quantity\": 1,\r\n    \"price\": 1700000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/minipro/product",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"minipro",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

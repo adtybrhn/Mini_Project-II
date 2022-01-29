@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "febeb208-4d7f-42a2-a950-52045db2214b",
+		"name": "GET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllMerchant",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY0MzM0NjMwNywiZXhwIjoxNjQzOTUxMTA3fQ.CeY1r9xNm7HoGg_A2MILxvYffejvWqaukk831AZk3JM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/minipro/merchant",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"minipro",
+						"merchant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY0MzM0NjMwNywiZXhwIjoxNjQzOTUxMTA3fQ.CeY1r9xNm7HoGg_A2MILxvYffejvWqaukk831AZk3JM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/minipro/product",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"minipro",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductByID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY0MzM0NjMwNywiZXhwIjoxNjQzOTUxMTA3fQ.CeY1r9xNm7HoGg_A2MILxvYffejvWqaukk831AZk3JM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/minipro/product/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"minipro",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMerchantByID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY0MzM0NjMwNywiZXhwIjoxNjQzOTUxMTA3fQ.CeY1r9xNm7HoGg_A2MILxvYffejvWqaukk831AZk3JM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/minipro/merchant/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"minipro",
+						"merchant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
