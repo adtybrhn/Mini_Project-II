@@ -100,11 +100,11 @@
   **Content:**  
   ```
     { 
-        product: [
-                  {<product_object>},
-                  {<product_object>},
-                  {<product_object>}
-              ]
+        product:  [
+                    {<product_object>},
+                    {<product_object>},
+                    {<product_object>}
+                  ]
     }
   ``` 
 * **Error Response:**
