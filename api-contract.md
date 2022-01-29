@@ -80,8 +80,8 @@
 ```
   {
     id: integer
-    name: varchar
-    quantity: varchar
+    name: string
+    quantity: string
     price: integer
   }
 ```
