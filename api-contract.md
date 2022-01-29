@@ -74,7 +74,7 @@
 * **Error Response:**
 * **Code:** 401  
 **Content:** `{ "msg": "Username or password is incorrect!" }`
-
+----
 #Product
 * product object
 ```
