@@ -12,16 +12,28 @@
   last_login: datetime 
 }
 ```
-**GET /merchant**
+**POST /minipro/register**
 ----
-  Returns all users in the system.
+  Creates a new merchant {user} and returns the new object.
 * **URL Params**  
-  None
-* **Data Params**  
   None
 * **Headers**  
   Content-Type: application/json  
+* **Data Params**  
+```
+    {
+        "name" : "merchant1",
+        "password" : "password1",
+        "password_repeat" : "password1"
+    }
+```
 * **Success Response:**  
 * **Code:** 200  
-  **Content:**  
+  **Content:**  `{ "msg": "Registered!" }` 
+    OR  
+* **Code:** 400  
+  **Content:** `{ "msg": "Please enter a password with min. 6 chars" }`
+    OR
+* **Code:** 400  
+  **Content:** `{ "msg": "Both passwords must match" }`
 ```
