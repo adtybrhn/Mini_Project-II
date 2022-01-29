@@ -85,6 +85,30 @@
   price: integer
 }
 ```
+**GET /minipro/product**
+----
+  Return get all product in the system
+* **URL Params**  
+  None
+* **Headers**  
+  Content-Type: application/json  
+  Authorization: Bearer `<Bearer Token>`
+* **Data Params**
+  None  
+* **Success Response:**  
+* **Code:** 200  
+  **Content:**  
+  ```{ 
+      product: [
+              {<product_object>},
+              {<product_object>},
+              {<product_object>}
+            ]
+  }``` 
+* **Error Response:**
+ * **Code:** 401  
+  **Content:** `{ "msg": "You must login first!" }`
+
 **POST /minipro/product**
 ----
   Creates a new product and returns the new object.
