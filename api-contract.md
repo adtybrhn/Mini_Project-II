@@ -74,4 +74,14 @@
 * **Error Response:**
 * **Code:** 401  
 **Content:** `{ "msg": "Username or password is incorrect!" }`
+
+#Product
+* product object
+```
+{
+  id: integer
+  name: varchar(50)
+  quantity: integer
+  price: integer
+}
 ```
