@@ -123,7 +123,7 @@
   Authorization: Bearer `<Bearer Token>`
 * **Success Response:**  
 * **Code:** 200  
-  **Content:**  `{ <user_object> }` 
+  **Content:**  `{ <product_object> }` 
 * **Error Response:**  
   * **Code:** 404  
   **Content:** `{ "message": "Product Not Found" }`  
@@ -154,7 +154,7 @@
 * **Code:** 401  
   **Content:** `{ "msg": "You must login first!" }`
 
-**PATCH /users/:id**
+**PATCH /product/:id**
 ----
   Updates fields on the specified product and returns the updated object.
 * **URL Params**  
@@ -176,6 +176,26 @@
 * **Error Response:**  
   * **Code:** 404  
   **Content:** `{ "message": "Product Not Found" }`  
+  OR  
+  * **Code:** 401  
+  **Content:** `{ "msg": "You must login first!" }`
+
+
+**DELETE /product/:id**
+----
+  Deletes the specified product.
+* **URL Params**  
+  *Required:* `id=[integer]`
+* **Data Params**  
+  None
+* **Headers**  
+  Content-Type: application/json  
+  Authorization: Bearer `<Bearer Token>`
+* **Success Response:** 
+  * **Code:** 204 
+* **Error Response:**  
+  * **Code:** 400  
+  **Content:** `{ "status": 400, "message": "Invalid Request" }`  
   OR  
   * **Code:** 401  
   **Content:** `{ "msg": "You must login first!" }`
