@@ -30,11 +30,11 @@
 * **Success Response:**  
 * **Code:** 200  
   **Content:**  `{ "msg": "Registered!" }` 
-* **Error Response:**   
+* **Error Response:**
 * **Code:** 400  
-  **Content:** `{ "msg": "Please enter a password with min. 6 chars" }`
-    OR
-* **Code:** 400  
+  **Content:** `{ "msg": "Please enter a password with min. 6 chars" }`  
+  OR  
+  * **Code:** 400  
   **Content:** `{ "msg": "Both passwords must match" }`
 
 **POST /minipro/login**
