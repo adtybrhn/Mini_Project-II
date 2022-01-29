@@ -71,7 +71,7 @@
       } 
     }
     ```
-    OR  
+* **Error Response:**
 * **Code:** 401  
-  **Content:** `{ "msg": "Username or password is incorrect!" }`
+**Content:** `{ "msg": "Username or password is incorrect!" }`
 ```
