@@ -10,7 +10,6 @@
   join_date: date
   phone_number: varchar(15)
   last_login: datetime 
- 
 }
 ```
 **GET /merchant**
