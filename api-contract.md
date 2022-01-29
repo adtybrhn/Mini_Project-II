@@ -92,7 +92,7 @@
   None
 * **Headers**  
   Content-Type: application/json  
-  Authorization: Bearer `<OAuth Token>`
+  Authorization: Bearer `<Bearer Token>`
 * **Data Params**  
 ```
     {
