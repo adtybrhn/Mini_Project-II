@@ -1,3 +1,3 @@
 # Mini Project II
 
-Burhan Aditya
+Burhan Aditya - Fullstack Web Development Batch III
