@@ -54,7 +54,7 @@
 * **Success Response:**  
 * **Code:** 200  
   **Content:**  
-  `{       
+  {       
     "msg": "Logged in!",
       "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE1LCJpYXQiOjE2NDM0MjcyMzMsImV4cCI6MTY0NDAzMjAzM30.u_qWwYmo7kLRViA8d34j7X9fw5KXDSeYewnjMP_mtE4",
       
@@ -68,7 +68,7 @@
           "phone_number": null,
           "last_login": null
       } 
-    }` 
+    } 
     OR  
 * **Code:** 401  
   **Content:** `{ "msg": "Username or password is incorrect!" }`
