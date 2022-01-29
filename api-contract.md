@@ -91,8 +91,8 @@
 * **URL Params**  
   None
 * **Headers**  
-  Content-Type: application/json
-  Authorization: Bearer `<Bearer Token>`  
+  Content-Type: application/json  
+  Authorization: Bearer `<OAuth Token>`
 * **Data Params**  
 ```
     {
@@ -107,3 +107,6 @@
 * **Error Response:**
  * **Code:** 401  
   **Content:** `{ "msg": "You must login first!" }`
+
+
+
