@@ -3,12 +3,12 @@
 ```
 {
   id: integer
-  name: varchar(20)
-  email: varchar(45)
-  password: varchar(100)
-  address: varchar(30)
+  name: string
+  email: string
+  password: string
+  address: string
   join_date: date
-  phone_number: varchar(15)
+  phone_number: string
   last_login: datetime 
 }
 ```
@@ -22,9 +22,9 @@
 * **Data Params**  
 ```
     {
-        "name" : "merchant1",
-        "password" : "password1",
-        "password_repeat" : "password1"
+        name : varchar(20),
+        password : varchar(100),
+        password_repeat : varchar(100)
     }
 ```
 * **Success Response:**  
@@ -47,8 +47,8 @@
 * **Data Params**  
 ```
     {
-        "name" : "merchant1",
-        "password" : "password1",
+        name : varchar(20),
+        password : varchar(100),
     }
 ```
 * **Success Response:**  
@@ -78,12 +78,12 @@
 #Product
 * product object
 ```
-{
-  id: integer
-  name: varchar(50)
-  quantity: integer
-  price: integer
-}
+  {
+    id: integer
+    name: varchar
+    quantity: varchar
+    price: integer
+  }
 ```
 **GET /minipro/product**
 ----
@@ -142,16 +142,42 @@
 * **Data Params**  
 ```
     {
-      "name": "MacBook Pro M1",
-      "quantity": 1,
-      "price": 1700000
+      name: varchar(50),
+      quantity: integer,
+      price: integer
     }
 ```
 * **Success Response:**  
 * **Code:** 200  
   **Content:**  `{ "message": "Product Created" }` 
 * **Error Response:**
- * **Code:** 401  
+* **Code:** 401  
+  **Content:** `{ "msg": "You must login first!" }`
+
+**PATCH /users/:id**
+----
+  Updates fields on the specified product and returns the updated object.
+* **URL Params**  
+  *Required:* `id=[integer]`
+* **Data Params**  
+```
+  {
+  	name: varchar(50),
+    quantity: integer,
+    price: integer
+  }
+```
+* **Headers**  
+  Content-Type: application/json  
+  Authorization: Bearer `<Bearer Token>`
+* **Success Response:** 
+* **Code:** 200  
+  **Content:**  `{ <product_object> }`  
+* **Error Response:**  
+  * **Code:** 404  
+  **Content:** `{ "message": "Product Not Found" }`  
+  OR  
+  * **Code:** 401  
   **Content:** `{ "msg": "You must login first!" }`
 
 
