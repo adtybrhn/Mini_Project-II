@@ -90,11 +90,11 @@
   Return get all product in the system
 * **URL Params**  
   None
+* **Data Params**  
+  None
 * **Headers**  
   Content-Type: application/json  
   Authorization: Bearer `<Bearer Token>`
-* **Data Params**
-  None  
 * **Success Response:**  
 * **Code:** 200  
   **Content:**  
