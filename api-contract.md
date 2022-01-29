@@ -85,3 +85,25 @@
   price: integer
 }
 ```
+**POST /minipro/product**
+----
+  Creates a new product and returns the new object.
+* **URL Params**  
+  None
+* **Headers**  
+  Content-Type: application/json
+  Authorization: Bearer `<Bearer Token>`  
+* **Data Params**  
+```
+    {
+      "name": "MacBook Pro M1",
+      "quantity": 1,
+      "price": 1700000
+    }
+```
+* **Success Response:**  
+* **Code:** 200  
+  **Content:**  `{ "message": "Product Created" }` 
+* **Error Response:**
+ * **Code:** 401  
+  **Content:** `{ "msg": "You must login first!" }`
