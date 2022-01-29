@@ -1,1 +1,3 @@
-# Mini_Project-II
+# Mini Project II
+
+Burhan Aditya
